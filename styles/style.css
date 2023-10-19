@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma;
+    direction: rtl;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    font-family: Tahoma;
+}
+
+section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section:nth-child(1){ background-color: #aad1ff;} 
+section:nth-child(2){background-color: #1ed6c9;} 
+section:nth-child(3){background-color: #14b444;} 
+section:nth-child(4){background-color: #39179f;} 
+section:nth-child(5){background-color: #c44709;} 
+.container {
+    position: relative;
+}
+.go {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transition: all .4s;
+}
+.go button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.go button i {
+    width: 15px;
+    height: 15px;
+    display: block;
+    border: 3px solid #000;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(312deg);
+    margin-top: 8px;
+    border-radius: 10%;
+}
+.go.active {
+    opacity: 1;
+    bottom: 40px;
+}
